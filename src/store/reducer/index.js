@@ -5,9 +5,6 @@ function reducer(state = { number: 0 }, action) {
   switch (action.type) {
     case TYPES.ADD:
       return { number: state.number + 1 };
-    case TYPES.ASYNC_ADD:
-      return { number: state.number + 1 };
-
     default:
       return state;
   }
